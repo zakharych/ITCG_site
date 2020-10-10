@@ -3,10 +3,11 @@
 }
 
 .format__list {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 72px 80px;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .format__item {
@@ -14,11 +15,13 @@
     flex-direction: column;
     align-items: center;
     min-width: 30%;
-    margin-right: 112px;
     margin-bottom: 64px;
 
     &:last-child {
         margin-right: 0;
+    }
+    &:nth-child(2n) {
+        grid-column: 2 / 4;
     }
 }
 
