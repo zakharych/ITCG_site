@@ -1,0 +1,29 @@
+.menu {
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: $darkColor;
+}
+
+.menu__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+}
+
+.menu__item {
+    flex-grow: 1;
+    text-align: center;
+
+    &:hover {
+        background-color: #2398d6;
+    }
+}
+
+.menu__link {
+    
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    height: 100%;
+}
