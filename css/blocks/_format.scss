@@ -1,0 +1,49 @@
+.format {
+    background-color: #fff;
+}
+
+.format__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 72px 80px;
+}
+
+.format__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 30%;
+    margin-right: 112px;
+    margin-bottom: 64px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.format__logo {
+    height: 76px;
+    width: 76px;
+    overflow: hidden;
+    margin-bottom: 21px;
+}
+
+.format__icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.format__title {
+    font-weight: 500;
+    font-size: 27px;
+}
+
+.format__title,
+.format__subtitle {
+    font-weight: 500;
+    color: #1b212b;
+    font-size: 24px;
+    text-align: center;
+}

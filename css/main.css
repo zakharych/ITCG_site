@@ -29,8 +29,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  color: #333;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #1b212b;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -399,7 +399,7 @@ template {
 }
 
 .hero {
-  height: 95vh;
+  height: 720px;
 }
 
 .menu {
@@ -541,4 +541,132 @@ template {
   100% {
     background-position: 0% 50%;
   }
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 46px;
+  height: 258px;
+}
+
+.slider__icon {
+  display: block;
+  width: 66px;
+  height: 66px;
+  overflow: hidden;
+  object-fit: contain;
+  margin-right: 20px;
+}
+
+.slider__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.slider__content {
+  width: 1080px;
+}
+
+.slider__content {
+  display: inline-block;
+  position: relative;
+  border: 3px solid #ffffff;
+  background: #1b212b;
+  transition: all .3s ease;
+  margin: 10px;
+}
+
+.slider__content:before,
+.slider__content:after {
+  content: "";
+  z-index: 1;
+  display: block;
+  position: absolute;
+  background: #1b212b;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 50%;
+}
+
+.slider__content:before {
+  width: calc(100% + 7px);
+  height: 82%;
+  transition: height 0.6s;
+}
+
+.slider__content:after {
+  height: calc(100% + 7px);
+  width: 97%;
+  transition: width 0.6s;
+}
+
+.slider__content:hover:before,
+.slider__content:focus:before {
+  height: 80%;
+}
+
+.slider__content:hover:after,
+.slider__content:focus:after {
+  width: 96%;
+}
+
+.slider__text {
+  padding: 30px;
+  z-index: 2;
+  position: relative;
+  text-align: center;
+}
+
+.format {
+  background-color: #fff;
+}
+
+.format__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 72px 80px;
+}
+
+.format__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 30%;
+  margin-right: 112px;
+  margin-bottom: 64px;
+}
+
+.format__item:last-child {
+  margin-right: 0;
+}
+
+.format__logo {
+  height: 76px;
+  width: 76px;
+  overflow: hidden;
+  margin-bottom: 21px;
+}
+
+.format__icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.format__title {
+  font-weight: 500;
+  font-size: 27px;
+}
+
+.format__title,
+.format__subtitle {
+  font-weight: 500;
+  color: #1b212b;
+  font-size: 24px;
+  text-align: center;
 }
