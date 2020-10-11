@@ -1,7 +1,7 @@
 .present {
     position: relative;
     display: flex;
-    width: 100%;
+    height: 650px;
 }
 
 .present__game {
@@ -20,6 +20,7 @@
     display: block;
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 

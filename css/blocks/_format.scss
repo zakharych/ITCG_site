@@ -15,11 +15,12 @@
     flex-direction: column;
     align-items: center;
     min-width: 30%;
-    margin-bottom: 64px;
+    margin-bottom: 72px;
 
     &:last-child {
         margin-right: 0;
     }
+
     &:nth-child(2n) {
         grid-column: 2 / 4;
     }
@@ -36,6 +37,7 @@
     display: block;
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 .format__title {
@@ -45,8 +47,27 @@
 
 .format__title,
 .format__subtitle {
-    font-weight: 500;
     color: #1b212b;
-    font-size: 24px;
     text-align: center;
+}
+
+.format__title {
+    font-weight: 600;
+    font-size: 25px;
+}
+.format__subtitle {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.15;
+}
+
+.format__subtitle--blue {
+    font-weight: 600;
+    color: #175e85;
+    font-size: 25px;
+}
+.format__subtitle--red {
+    font-weight: 600;
+    color: #8f0c18;
+    font-size: 25px;
 }
