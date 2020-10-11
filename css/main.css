@@ -694,6 +694,7 @@ template {
 .schema {
   background: url("../img/bd_schema.png") no-repeat center bottom;
   background-size: 20%;
+  min-height: 550px;
 }
 
 .scema__list {
@@ -739,4 +740,49 @@ template {
 
 .schema__sutitle--blue::before {
   background-color: #175e85;
+}
+
+.lineup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #1a6188;
+  min-height: 484px;
+}
+
+.lineup__pic {
+  width: 280px;
+  height: 212px;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-right: 50px;
+}
+
+.lineup__img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.lineup__content {
+  text-align: center;
+}
+
+.lineup__title {
+  letter-spacing: 6px;
+  font-weight: 600;
+  font-size: 34px;
+  text-transform: uppercase;
+  margin-bottom: 44px;
+}
+
+.lineup__sibtitle {
+  letter-spacing: 1px;
+  line-height: 1.3;
+}
+
+.lineup__sibtitle--bold {
+  font-weight: 600;
 }

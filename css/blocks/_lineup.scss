@@ -1,0 +1,38 @@
+.lineup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1a6188;
+    min-height: 484px;
+}
+.lineup__pic {
+    width: 280px;
+    height: 212px;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-right: 50px;
+}
+.lineup__img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.lineup__content {
+    text-align: center;
+}
+.lineup__title {
+    letter-spacing: 6px;
+    font-weight: 600;
+    font-size: 34px;
+    text-transform: uppercase;
+    margin-bottom: 44px;
+}
+.lineup__sibtitle {
+    letter-spacing: 1px;
+    line-height: 1.3;
+    &--bold {
+        font-weight: 600;
+    }
+}
