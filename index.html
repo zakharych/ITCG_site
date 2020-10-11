@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=1280" />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.css" />
@@ -100,14 +100,16 @@
               <div class="format__logo">
                 <img
                   class="format__icon"
-                  src="./img/icon_calendar.png"
+                  src="./img/icon_online.png"
                   alt="icon"
                 />
               </div>
               <p class="format__title">Формат:</p>
-              <p class="format__subtitle">
-                Турнир будет<br> проходить онлайн.
-              </p>
+              <spa class="format__subtitle">
+                Турнир будет
+                <br />
+                проходить онлайн.
+              </spa>
             </li>
             <li class="format__item">
               <div class="format__logo">
@@ -121,15 +123,22 @@
                 Даты проведения:
               </p>
               <p class="format__subtitle">
-                Групповой этап с 15 ноября по 10 декабря 2020 <br> Плей-офф с 12 по
-                20 декабря 2020
+                Групповой этап
+                <span class="format__subtitle--blue">
+                  с 15 ноября по 10 декабря 2020
+                </span>
+                <br />
+                Плей-офф
+                <span class="format__subtitle--red">
+                  с 12 по 20 декабря 2020
+                </span>
               </p>
             </li>
             <li class="format__item">
               <div class="format__logo">
                 <img
                   class="format__icon"
-                  src="./img/icon_calendar.png"
+                  src="./img/icon_team.png"
                   alt="icon"
                 />
               </div>
@@ -144,7 +153,7 @@
               <div class="format__logo">
                 <img
                   class="format__icon"
-                  src="./img/icon_calendar.png"
+                  src="./img/Icon_time.png"
                   alt="icon"
                 />
               </div>
@@ -152,12 +161,64 @@
                 Игровое время:
               </p>
               <p class="format__subtitle">
-                Игры будут проходить в будни (с понедельника по четверг) <br>  с 18.00
-                до 23.00 по местному времени обеих команд <br>  (если оно совпадает)
-                или устанавливается организаторами.
+                Игры будут проходить в будни (с понедельника по четверг)
+                <br />
+                с 18.00 до 23.00 по местному времени обеих команд
+                <br />
+                (если оно совпадает) или устанавливается организаторами.
               </p>
             </li>
           </ul>
+        </section>
+        <section class="schema">
+          <ul class="scema__list">
+            <li class="schema__item">
+              <p class="schema__title">Структура турнира:</p>
+              <p class="schema__sutitle">
+                <span class="schema__subtitle--bold">Дивизион.</span>
+                <br />
+                В дивизион входит от 3 до 6 команд, географически близко
+                расположенные друг к другу (близкие часовые пояса).
+              </p>
+              <p class="schema__sutitle">
+                <span class="schema__subtitle--bold">Конференция.</span>
+                <br />
+                Конференция объединяет от 3 до 6 дивизионов.
+              </p>
+            </li>
+            <li class="schema__item">
+              <p class="schema__title">Схема турнира:</p>
+              <p class="schema__sutitle schema__sutitle--blue">
+                <span class="schema__subtitle--bold">Групповой этап</span>
+                <br />
+                (внутри дивизиона каждая команда играет с каждой).
+              </p>
+              <p class="schema__sutitle schema__sutitle--blue">
+                <span class="schema__subtitle--bold">Плей-офф</span>
+                <br />
+                Плей-офф (олимпийская система).
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section class="lineup">
+          <div class="lineup__pic">
+            <img
+              class="lineup__img"
+              src="./img/icon_lineup.png"
+              alt="people_icon"
+            />
+          </div>
+          <div class="lineup__content">
+            <p class="lineup__title">Состав команды:</p>
+            <p class="lineup__sibtitle">
+              Команды должны состоять из <span class="lineup__sibtitle--bold">5 игроков ( + до 2-х запасных ).</span>  <br>
+              Составы команды утверждаются перед началом турнира. <br> Все игроки
+              команды должны являться сотрудниками заявленной IT-компании. <br>
+              Сотрудник - работник компании с занятостью не менее 30 часов в
+              неделю. <br> Легионеры не допускаются.
+            </p>
+          </div>
         </section>
       </div>
     </div>
