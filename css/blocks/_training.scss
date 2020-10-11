@@ -1,0 +1,30 @@
+.training {
+    padding: 76px 44px;
+    background: url("../img/bg_training.png") no-repeat right 40px bottom;
+    background-size: 35%;
+}
+.training .text-content {    
+    width: 48%;
+    margin-right: 60px;
+}
+.training .text-content__suntitle {
+    position: relative;
+    letter-spacing: normal;
+    margin-bottom: 16px;
+    &::before {
+        content: "";
+        background: url("../img/icon_pdf.png"); 
+        background-size:  44px 44px;
+        display: block;
+        width: 44px;
+        height: 44px;
+        position: absolute;
+        right: -10px;
+        bottom: 0;
+        transform: translateX(100%);
+    }
+}
+
+.training .text-content__title {
+    margin-bottom: 62px;
+}

@@ -20,17 +20,22 @@
     width: 100%;
     object-fit: contain;
 }
-.lineup__content {
+.text-content {
     text-align: center;
 }
-.lineup__title {
+.text-content__sibtitle--hedline {
+    
+    font-size: 26px;
+    font-weight: 600;
+}
+.text-content__title {
     letter-spacing: 6px;
     font-weight: 600;
     font-size: 34px;
     text-transform: uppercase;
     margin-bottom: 44px;
 }
-.lineup__sibtitle {
+.text-content__sibtitle {
     letter-spacing: 1px;
     line-height: 1.3;
     &--bold {

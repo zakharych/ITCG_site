@@ -702,7 +702,7 @@ template {
   flex-direction: row;
   position: relative;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   text-align: center;
   padding: 77px 35px;
 }
@@ -767,11 +767,16 @@ template {
   object-fit: contain;
 }
 
-.lineup__content {
+.text-content {
   text-align: center;
 }
 
-.lineup__title {
+.text-content__sibtitle--hedline {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.text-content__title {
   letter-spacing: 6px;
   font-weight: 600;
   font-size: 34px;
@@ -779,11 +784,45 @@ template {
   margin-bottom: 44px;
 }
 
-.lineup__sibtitle {
+.text-content__sibtitle {
   letter-spacing: 1px;
   line-height: 1.3;
 }
 
-.lineup__sibtitle--bold {
+.text-content__sibtitle--bold {
   font-weight: 600;
+}
+
+.training {
+  padding: 76px 44px;
+  background: url("../img/bg_training.png") no-repeat right 40px bottom;
+  background-size: 35%;
+}
+
+.training .text-content {
+  width: 48%;
+  margin-right: 60px;
+}
+
+.training .text-content__suntitle {
+  position: relative;
+  letter-spacing: normal;
+  margin-bottom: 16px;
+}
+
+.training .text-content__suntitle::before {
+  content: "";
+  background: url("../img/icon_pdf.png");
+  background-size: 44px 44px;
+  display: block;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+  transform: translateX(100%);
+}
+
+.training .text-content__title {
+  margin-bottom: 62px;
 }
