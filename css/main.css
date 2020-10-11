@@ -796,7 +796,7 @@ template {
 .training {
   padding: 76px 44px;
   background: url("../img/bg_training.png") no-repeat right 40px bottom;
-  background-size: 35%;
+  background-size: 435px 350px;
 }
 
 .training .text-content {
