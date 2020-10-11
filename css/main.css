@@ -623,7 +623,7 @@ template {
   display: grid;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 72px 80px;
+  padding: 72px 80px 20px;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -689,4 +689,54 @@ template {
   font-weight: 600;
   color: #8f0c18;
   font-size: 25px;
+}
+
+.schema {
+  background: url("../img/bd_schema.png") no-repeat center bottom;
+  background-size: 20%;
+}
+
+.scema__list {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 77px 35px;
+}
+
+.schema__item {
+  width: 37%;
+}
+
+.schema__title {
+  text-transform: uppercase;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.schema__subtitle--bold {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.schema__sutitle {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+.schema__sutitle::before {
+  margin: 10px 0;
+  align-self: center;
+  content: '';
+  display: block;
+  width: 3px;
+  height: 46px;
+  background-color: #8f0d17;
+}
+
+.schema__sutitle--blue::before {
+  background-color: #175e85;
 }
