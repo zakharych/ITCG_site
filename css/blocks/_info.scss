@@ -1,7 +1,7 @@
 .info__list {
     display: grid;
     grid-template-columns: 50%;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(3);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -9,7 +9,8 @@
 .info__item {
     padding: 38px 60px;
     display: flex;
-    align-items: center;
+    align-items: center;    
+    height: 301px;
 }
 
 .info__pic {
@@ -68,7 +69,7 @@
     grid-area: 3 / 1 / 4 / 3;
     background-color: #0c8d3a;
     padding: 38px 30px;
-    height: 70%;
+    height: 200px;
     align-items: flex-start;
     justify-content: space-around;
 
