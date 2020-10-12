@@ -894,4 +894,32 @@ template {
 .info__item-grid-5 {
   grid-area: 3 / 1 / 4 / 3;
   background-color: #0c8d3a;
+  padding: 38px 30px;
+  height: 70%;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.info__item-grid-5 .info__pic {
+  margin-right: 0;
+}
+
+.info__item-grid-5 .info__pic:not(:first-child) {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  align-self: center;
+}
+
+.info__item-grid-5 .info__content {
+  margin-right: 0;
+}
+
+.line {
+  display: block;
+  height: 140%;
+  width: 2px;
+  background-color: #055220;
+  align-self: center;
+  margin-right: 0;
 }
