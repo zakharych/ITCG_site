@@ -1,6 +1,7 @@
 .partners {
     background-color: #ffffff;
     padding: 30px 116px;
+    min-height: 714px;
 }
 
 .partners__title {
@@ -30,7 +31,6 @@
 .partners__container {
     display: flex;
     align-items: center;
-    margin-bottom: -72px;
 }
 
 .partners__category {
@@ -46,6 +46,7 @@
     width: 100%;
     justify-content: space-around;
     margin-left: -60px;
+    margin-bottom: -72px;
 
     &--center-partner {
         justify-content: space-evenly;
