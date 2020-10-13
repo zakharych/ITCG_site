@@ -655,6 +655,10 @@ template {
   margin-bottom: 17px;
 }
 
+.bx-viewport {
+  min-height: 258px;
+}
+
 .format {
   background-color: #fff;
 }
