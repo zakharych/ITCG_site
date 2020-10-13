@@ -1116,6 +1116,11 @@ template {
   max-width: 340px;
 }
 
+.partners__link-org {
+  width: 270px;
+  height: 100px;
+}
+
 .partners__link:hover {
   filter: grayscale(0%);
   transform: scale(1.1);
