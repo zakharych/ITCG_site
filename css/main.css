@@ -605,13 +605,13 @@ template {
 }
 
 .slider__content:before {
-  width: calc(100% + 7px);
+  width: calc(100% + 14px);
   height: 82%;
   transition: height 0.6s;
 }
 
 .slider__content:after {
-  height: calc(100% + 7px);
+  height: calc(100% + 14px);
   width: 97%;
   transition: width 0.6s;
 }
