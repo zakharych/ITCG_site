@@ -1,526 +1,760 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1280" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=1280" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="./main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-  <script src="./main.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./css/main.css" />
+    <title>ITCG</title>
+  </head>
 
-  <title>ITCG</title>
-</head>
-
-<body>
-  <div class="wrapper">
-    <div class="container">
-      <section class="hero">
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="#format" class="menu__link">О турнире</a>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <section class="hero">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#format" class="menu__link">О турнире</a>
+              </li>
+              <li class="menu__item">
+                <a href="#schema" class="menu__link">Структура турнира</a>
+              </li>
+              <li class="menu__item">
+                <a href="#buy" class="menu__link">Регистрация</a>
+              </li>
+              <li class="menu__item">
+                <a href="#partners" class="menu__link">наши партнеры</a>
+              </li>
+              <li class="menu__item">
+                <a href="#contacts" class="menu__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="present">
+            <div class="present__about">
+              <div class="itcg">
+                <div class="itcg__logo">
+                  <img
+                    class="itcs__pic"
+                    src="./img/itcg_logo.png"
+                    alt="itcg__logo"
+                  />
+                </div>
+                <div class="itcg__russia">
+                  <img
+                    class="itcg__russia-pic"
+                    src="./img/Russia_2020.png"
+                    alt=""
+                  />
+                </div>
+                <h1 class="itcg__h1">
+                  Главный киберспортивный турнир среди IT-компаний России.
+                </h1>
+              </div>
+            </div>
+            <div class="present__game present__game-gradient">
+              <img
+                class="present__pic"
+                src="./img/bg_dota.png"
+                alt="dota__pic"
+              />
+              <img
+                class="present__logo"
+                src="./img/logo__dota.png"
+                alt="logo__dota"
+              />
+            </div>
+            <div
+              class="present__game present__game-gradient present__game-gradient--blue"
+            >
+              <img class="present__pic" src="./img/bg_cs.png" alt="cs_pic " />
+              <img
+                class="present__logo"
+                src="./img/logo__cs.png"
+                alt="logo__dota"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="slider-section">
+          <div class="slider">
+            <div class="sliderrrr">
+              <div class="slider__icon">
+                <img class="slider__img" src="./img/i_icon.png" alt="icon" />
+              </div>
+              <div class="slider__content">
+                <p class="slider__text">
+                  25 июля 2001 года Россия стала первой страной в мире,
+                  признавшей киберспорт официальным видом спорта. Самые
+                  популярные киберспортивные дисциплины: DOTA 2 и CS:GO.
+                </p>
+              </div>
+            </div>
+            <div class="sliderrrr">
+              <div class="slider__icon">
+                <img class="slider__img" src="./img/icon_live.png" alt="icon" />
+              </div>
+              <div class="slider__content">
+                <p class="slider__text">
+                  Каждый третий пользователь Рунета смотрит стримы, больше 50%
+                  зрителей стримов смотрят игровые трансляции! Все игры турнира
+                  будут транслироваться на youtube в сопровождении
+                  профессиональных стримеров-комментаторов.
+                </p>
+              </div>
+            </div>
+            <div class="sliderrrr">
+              <div class="slider__icon">
+                <img
+                  class="slider__img"
+                  src="./img/icon_hands.png"
+                  alt="icon"
+                />
+              </div>
+              <div class="slider__content">
+                <p class="slider__text">
+                  Спортивные соревнования развивают командный дух, способствует
+                  созданию и укрепление доверительных отношений между
+                  сотрудниками. Участие в турнире - это отличный информационный
+                  повод для публикации в корпоративных медиа ресурсах,
+                  социальных сетях сотрудников и СМИ
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="format" id="format">
+          <ul class="format__list">
+            <li class="format__item">
+              <div class="format__logo">
+                <img
+                  class="format__icon"
+                  src="./img/icon_online.png"
+                  alt="icon"
+                />
+              </div>
+              <p class="format__title">Формат:</p>
+              <span class="format__subtitle">
+                Турнир будет
+                <br />
+                проходить онлайн.
+              </span>
             </li>
-            <li class="menu__item">
-              <a href="#schema" class="menu__link">Структура турнира</a>
+            <li class="format__item">
+              <div class="format__logo">
+                <img
+                  class="format__icon"
+                  src="./img/icon_calendar.png"
+                  alt="icon"
+                />
+              </div>
+              <p class="format__title">Даты проведения:</p>
+              <p class="format__subtitle">
+                Групповой этап
+                <span class="format__subtitle--blue">
+                  с 15 ноября по 10 декабря 2020
+                </span>
+                <br />
+                Плей-офф
+                <span class="format__subtitle--red">
+                  с 12 по 20 декабря 2020
+                </span>
+              </p>
             </li>
-            <li class="menu__item">
-              <a href="#buy" class="menu__link">Регистрация</a>
+            <li class="format__item">
+              <div class="format__logo">
+                <img
+                  class="format__icon"
+                  src="./img/icon_team.png"
+                  alt="icon"
+                />
+              </div>
+              <p class="format__title">Режим игры:</p>
+              <p class="format__subtitle">Командный</p>
             </li>
-            <li class="menu__item">
-              <a href="#partners" class="menu__link">наши партнеры</a>
-            </li>
-            <li class="menu__item">
-              <a href="#contacts" class="menu__link">Контакты</a>
+            <li class="format__item">
+              <div class="format__logo">
+                <img
+                  class="format__icon"
+                  src="./img/Icon_time.png"
+                  alt="icon"
+                />
+              </div>
+              <p class="format__title">Игровое время:</p>
+              <p class="format__subtitle">
+                Игры будут проходить в будни (с понедельника по четверг)
+                <br />
+                с 18.00 до 23.00 по местному времени обеих команд
+                <br />
+                (если оно совпадает) или устанавливается организаторами.
+              </p>
             </li>
           </ul>
-        </nav>
-        <div class="present">
-          <div class="present__about">
-            <div class="itcg">
-              <div class="itcg__logo">
-                <img class="itcs__pic" src="./img/itcg_logo.png" alt="itcg__logo" />
-              </div>
-              <div class="itcg__russia">
-                <img class="itcg__russia-pic" src="./img/Russia_2020.png" alt="" />
-              </div>
-              <h1 class="itcg__h1">
-                Главный киберспортивный турнир среди IT-компаний России.
-              </h1>
-            </div>
-          </div>
-          <div class="present__game present__game-gradient">
-            <img class="present__pic" src="./img/bg_dota.png" alt="dota__pic" />
-            <img class="present__logo" src="./img/logo__dota.png" alt="logo__dota" />
-          </div>
-          <div class="present__game present__game-gradient present__game-gradient--blue">
-            <img class="present__pic" src="./img/bg_cs.png" alt="cs_pic " />
-            <img class="present__logo" src="./img/logo__cs.png" alt="logo__dota" />
-          </div>
-        </div>
-      </section>
-      <section class="slider-section">
-        <div class="slider">
-          <div class="sliderrrr">
-            <div class="slider__icon">
-              <img class="slider__img" src="./img/i_icon.png" alt="icon" />
-            </div>
-            <div class="slider__content">
-              <p class="slider__text">
-                25 июля 2001 года Россия стала первой страной в мире, признавшей
-                киберспорт официальным видом спорта. Самые популярные
-                киберспортивные дисциплины: DOTA 2 и CS:GO.
+        </section>
+        <section class="schema" id="schema">
+          <ul class="scema__list">
+            <li class="schema__item">
+              <p class="schema__title">Структура турнира:</p>
+              <p class="schema__sutitle">
+                <span class="schema__subtitle--bold">Дивизион.</span>
+                <br />
+                В дивизион входит от 3 до 6 команд, географически близко
+                расположенные друг к другу (близкие часовые пояса).
               </p>
-            </div>
-          </div>
-          <div class="sliderrrr">
-            <div class="slider__icon">
-              <img class="slider__img" src="./img/icon_live.png" alt="icon" />
-            </div>
-            <div class="slider__content">
-              <p class="slider__text">
-                Каждый третий пользователь Рунета смотрит стримы, больше 50% зрителей стримов смотрят
-                игровые трансляции!
-                Все игры турнира будут транслироваться на youtube в сопровождении профессиональных
-                стримеров-комментаторов.
+              <p class="schema__sutitle">
+                <span class="schema__subtitle--bold">Конференция.</span>
+                <br />
+                Конференция объединяет от 3 до 6 дивизионов.
               </p>
-            </div>
-          </div>
-          <div class="sliderrrr">
-            <div class="slider__icon">
-              <img class="slider__img" src="./img/icon_hands.png" alt="icon" />
-            </div>
-            <div class="slider__content">
-              <p class="slider__text">
-                Спортивные соревнования развивают командный дух, способствует созданию и укрепление
-                доверительных отношений между сотрудниками.
-                Участие в турнире - это отличный информационный повод для публикации в корпоративных медиа
-                ресурсах, социальных сетях сотрудников и СМИ
+            </li>
+            <li class="schema__item">
+              <p class="schema__title">Схема турнира:</p>
+              <p class="schema__sutitle schema__sutitle--blue">
+                <span class="schema__subtitle--bold">Групповой этап</span>
+                <br />
+                (внутри дивизиона каждая команда играет с каждой).
               </p>
-            </div>
+              <p class="schema__sutitle schema__sutitle--blue">
+                <span class="schema__subtitle--bold">Плей-офф</span>
+                <br />
+                Плей-офф (олимпийская система).
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section class="lineup">
+          <div class="lineup__pic">
+            <img
+              class="lineup__img"
+              src="./img/icon_lineup.png"
+              alt="people_icon"
+            />
           </div>
-        </div>
-      </section>
-      <section class="format" id="format">
-        <ul class="format__list">
-          <li class="format__item">
-            <div class="format__logo">
-              <img class="format__icon" src="./img/icon_online.png" alt="icon" />
-            </div>
-            <p class="format__title">Формат:</p>
-            <spa class="format__subtitle">
-              Турнир будет
-              <br />
-              проходить онлайн.
-            </spa>
-          </li>
-          <li class="format__item">
-            <div class="format__logo">
-              <img class="format__icon" src="./img/icon_calendar.png" alt="icon" />
-            </div>
-            <p class="format__title">
-              Даты проведения:
-            </p>
-            <p class="format__subtitle">
-              Групповой этап
-              <span class="format__subtitle--blue">
-                с 15 ноября по 10 декабря 2020
+          <div class="text-content">
+            <p class="text-content__title">Состав команды:</p>
+            <p class="text-content__sibtitle">
+              Команды должны состоять из
+              <span class="text-content__sibtitle--bold">
+                5 игроков ( + до 2-х запасных ).
               </span>
               <br />
-              Плей-офф
-              <span class="format__subtitle--red">
-                с 12 по 20 декабря 2020
+              Составы команды утверждаются перед началом турнира.
+              <br />
+              Все игроки команды должны являться сотрудниками заявленной
+              IT-компании.
+              <br />
+              Сотрудник - работник компании с занятостью не менее 30 часов в
+              неделю.
+              <br />
+              Легионеры не допускаются.
+            </p>
+          </div>
+        </section>
+        <section class="training">
+          <div class="text-content">
+            <p class="text-content__title">Подготовка команды:</p>
+            <p class="text-content__suntitle">
+              <span class="text-content__sibtitle--hedline"> Тренировки </span>
+              <br />
+              Мы готовы организовать тренировки с профессиональными тренерами и
+              игроками
+            </p>
+            <p class="text-content__suntitle">
+              <span class="text-content__sibtitle--hedline">
+                Корпоративный турнир
               </span>
-            </p>
-          </li>
-          <li class="format__item">
-            <div class="format__logo">
-              <img class="format__icon" src="./img/icon_team.png" alt="icon" />
-            </div>
-            <p class="format__title">
-              Режим игры:
-            </p>
-            <p class="format__subtitle">
-              Командный
-            </p>
-          </li>
-          <li class="format__item">
-            <div class="format__logo">
-              <img class="format__icon" src="./img/Icon_time.png" alt="icon" />
-            </div>
-            <p class="format__title">
-              Игровое время:
-            </p>
-            <p class="format__subtitle">
-              Игры будут проходить в будни (с понедельника по четверг)
               <br />
-              с 18.00 до 23.00 по местному времени обеих команд
-              <br />
-              (если оно совпадает) или устанавливается организаторами.
+              Мы готовы организовать и провести внутренний корпоративный турнир
             </p>
-          </li>
-        </ul>
-      </section>
-      <section class="schema" id="schema">
-        <ul class="scema__list">
-          <li class="schema__item">
-            <p class="schema__title">Структура турнира:</p>
-            <p class="schema__sutitle">
-              <span class="schema__subtitle--bold">Дивизион.</span>
-              <br />
-              В дивизион входит от 3 до 6 команд, географически близко
-              расположенные друг к другу (близкие часовые пояса).
-            </p>
-            <p class="schema__sutitle">
-              <span class="schema__subtitle--bold">Конференция.</span>
-              <br />
-              Конференция объединяет от 3 до 6 дивизионов.
-            </p>
-          </li>
-          <li class="schema__item">
-            <p class="schema__title">Схема турнира:</p>
-            <p class="schema__sutitle schema__sutitle--blue">
-              <span class="schema__subtitle--bold">Групповой этап</span>
-              <br />
-              (внутри дивизиона каждая команда играет с каждой).
-            </p>
-            <p class="schema__sutitle schema__sutitle--blue">
-              <span class="schema__subtitle--bold">Плей-офф</span>
-              <br />
-              Плей-офф (олимпийская система).
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section class="lineup">
-        <div class="lineup__pic">
-          <img class="lineup__img" src="./img/icon_lineup.png" alt="people_icon" />
-        </div>
-        <div class="text-content">
-          <p class="text-content__title">Состав команды:</p>
-          <p class="text-content__sibtitle">
-            Команды должны состоять из
-            <span class="text-content__sibtitle--bold">
-              5 игроков ( + до 2-х запасных ).
-            </span>
-            <br />
-            Составы команды утверждаются перед началом турнира.
-            <br />
-            Все игроки команды должны являться сотрудниками заявленной
-            IT-компании.
-            <br />
-            Сотрудник - работник компании с занятостью не менее 30 часов в
-            неделю.
-            <br />
-            Легионеры не допускаются.
-          </p>
-        </div>
-      </section>
-      <section class="training">
-        <div class="text-content">
-          <p class="text-content__title">Подготовка команды:</p>
-          <p class="text-content__suntitle">
-            <span class="text-content__sibtitle--hedline">
-              Тренировки
-            </span>
-            <br />
-            Мы готовы организовать тренировки с профессиональными тренерами и
-            игроками
-          </p>
-          <p class="text-content__suntitle">
-            <span class="text-content__sibtitle--hedline">
-              Корпоративный турнир
-            </span>
-            <br />
-            Мы готовы организовать и провести внутренний корпоративный турнир
-          </p>
-        </div>
-      </section>
-      <section class="info">
-        <ul class="info__list">
-          <li class="info__item info__item-grid-1">
-            <div class="info__pic">
-              <img src="./img/icon_refery.png" alt="youtube_icon" class="info__img" />
-            </div>
-            <div class="info__content">
-              <p class="info__title">
-                Судейство:
-              </p>
-              <p class="info__subtitle">
-                Квалифицированная судейская бригада.
-              </p>
-            </div>
-          </li>
-          <li class="info__item info__item-grid-2">
-            <div class="info__pic">
-              <img src="./img/icon_discord.png" alt="youtube_icon" class="info__img" />
-            </div>
-            <div class="info__content">
-              <p class="info__title">
-                Коммуникации игроков и организаторов:
-              </p>
-              <p class="info__subtitle">
-                На специально созданном игровом сервере мессенджера Discord.
-              </p>
-            </div>
-          </li>
-          <li class="info__item info__item-grid-3">
-            <div class="info__pic">
-              <img src="./img/icon_cup.png" alt="youtube_icon" class="info__img" />
-            </div>
-            <div class="info__content">
-              <p class="info__title">
-                Награды:
-              </p>
-              <p class="info__subtitle">
-                За 1 место - Кубок и медали
-                <br />
-                За 2 и 3 место - Призы и медали
-                <br />
-                Всем призерам подарки от спонсоров и партнеров турнира.
-              </p>
-            </div>
-          </li>
-          <li class="info__item info__item-grid-4">
-            <div class="info__pic">
-              <img src="./img/icon_yt.png" alt="youtube_icon" class="info__img" />
-            </div>
-            <div class="info__content">
-              <p class="info__title">
-                Трансляции:
-              </p>
-              <p class="info__subtitle">
-                Все игры будут транслироваться на youtube в сопровождении
-                профессиональных стримеров-комментаторов.
-              </p>
-            </div>
-          </li>
-          <li class="info__item info__item-grid-5">
-            <div class="info__pic">
-              <img src="./img/icon_reg.svg" alt="youtube_icon" class="info__img" />
-            </div>
-            <div class="info__content">
-              <p class="info__title">
-                Регламент:
-              </p>
-              <p class="text-content__suntitle">
-                Регламент DOTA 2 - будет опубликован 25 октября
-                <br />
-                Регламент CS:GO - будет опубликован 25 октября
-              </p>
-            </div>
-            <div class="line"></div>
-            <div class="info__pic">
-              <img src="./img/logo__dota.png" alt="youtube_icon" class="info__img" />
-            </div>
-            <div class="line"></div>
-            <div class="info__pic">
-              <img src="./img/logo__cs.png" alt="youtube_icon" class="info__img" />
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="buy" id="buy">
-        <div class="ticket">
-          <div class="ticket__header">
-            при регистрации и оплате участия
-            <br />
-            <sapn class="ticket__header--bold">до 25 октября</sapn>
           </div>
-          <div class="ticket__body">
-            <div class="ticket__price">15.000р</div>
-            <svg class="triangle" width="580" height="90">
-              <polygon points="0,0 293,90 593,0" fill="#29ACE2" stroke-width="5"></polygon>
-            </svg>
-            <div class="ticket__desc">
-              При регистрации более одной команды, регистрационный взнос за
-              команду (кроме первой) составит 10 000 руб.
+        </section>
+        <section class="info">
+          <ul class="info__list">
+            <li class="info__item info__item-grid-1">
+              <div class="info__pic">
+                <img
+                  src="./img/icon_refery.png"
+                  alt="youtube_icon"
+                  class="info__img"
+                />
+              </div>
+              <div class="info__content">
+                <p class="info__title">Судейство:</p>
+                <p class="info__subtitle">
+                  Квалифицированная судейская бригада.
+                </p>
+              </div>
+            </li>
+            <li class="info__item info__item-grid-2">
+              <div class="info__pic">
+                <img
+                  src="./img/icon_discord.png"
+                  alt="youtube_icon"
+                  class="info__img"
+                />
+              </div>
+              <div class="info__content">
+                <p class="info__title">Коммуникации игроков и организаторов:</p>
+                <p class="info__subtitle">
+                  На специально созданном игровом сервере мессенджера Discord.
+                </p>
+              </div>
+            </li>
+            <li class="info__item info__item-grid-3">
+              <div class="info__pic">
+                <img
+                  src="./img/icon_cup.png"
+                  alt="youtube_icon"
+                  class="info__img"
+                />
+              </div>
+              <div class="info__content">
+                <p class="info__title">Награды:</p>
+                <p class="info__subtitle">
+                  За 1 место - Кубок и медали
+                  <br />
+                  За 2 и 3 место - Призы и медали
+                  <br />
+                  Всем призерам подарки от спонсоров и партнеров турнира.
+                </p>
+              </div>
+            </li>
+            <li class="info__item info__item-grid-4">
+              <div class="info__pic">
+                <img
+                  src="./img/icon_yt.png"
+                  alt="youtube_icon"
+                  class="info__img"
+                />
+              </div>
+              <div class="info__content">
+                <p class="info__title">Трансляции:</p>
+                <p class="info__subtitle">
+                  Все игры будут транслироваться на youtube в сопровождении
+                  профессиональных стримеров-комментаторов.
+                </p>
+              </div>
+            </li>
+            <li class="info__item info__item-grid-5">
+              <div class="info__pic">
+                <img
+                  src="./img/icon_reg.svg"
+                  alt="youtube_icon"
+                  class="info__img"
+                />
+              </div>
+              <div class="info__content">
+                <p class="info__title">Регламент:</p>
+                <p class="text-content__suntitle">
+                  Регламент DOTA 2 - будет опубликован 25 октября
+                  <br />
+                  Регламент CS:GO - будет опубликован 25 октября
+                </p>
+              </div>
+              <div class="line"></div>
+              <div class="info__pic">
+                <img
+                  src="./img/logo__dota.png"
+                  alt="youtube_icon"
+                  class="info__img"
+                />
+              </div>
+              <div class="line"></div>
+              <div class="info__pic">
+                <img
+                  src="./img/logo__cs.png"
+                  alt="youtube_icon"
+                  class="info__img"
+                />
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="buy" id="buy">
+          <div class="ticket">
+            <div class="ticket__header">
+              <p>
+                при регистрации и оплате участия
+                <br />
+                <sapn class="ticket__header--bold">до 25 октября</sapn>
+              </p>
             </div>
-          </div>
-          <a href="#" class="ticket__button">КУПИТЬ</a>
-        </div>
-        <div class="ticket">
-          <div class="ticket__header ticket__header--red">
-            при поздней регистрации
-          </div>
-          <div class="ticket__body">
-            <div class="ticket__price ticket__price--yellow">17.000р</div>
-            <p>
+            <div class="ticket__body">
+              <div class="ticket__price">15.000р</div>
               <svg class="triangle" width="580" height="90">
-                <polygon points="0,0 293,90 593,0" fill="#f1cc01" stroke-width="5"></polygon>
+                <polygon
+                  points="0,0 293,90 593,0"
+                  fill="#29ACE2"
+                  stroke-width="5"
+                ></polygon>
               </svg>
-            </p>
-            <div class="ticket__desc">
-              При регистрации более одной команды, регистрационный взнос за
-              команду (кроме первой) составит 12 500 руб.
+              <div class="ticket__desc">
+                При регистрации более одной команды, регистрационный взнос за
+                команду (кроме первой) составит 10 000 руб.
+              </div>
+            </div>
+            <a href="#" class="ticket__button">КУПИТЬ</a>
+          </div>
+          <div class="ticket">
+            <div class="ticket__header ticket__header--red">
+              при поздней регистрации
+            </div>
+            <div class="ticket__body">
+              <div class="ticket__price ticket__price--yellow">17.000р</div>
+              <p>
+                <svg class="triangle" width="580" height="90">
+                  <polygon
+                    points="0,0 293,90 593,0"
+                    fill="#f1cc01"
+                    stroke-width="5"
+                  ></polygon>
+                </svg>
+              </p>
+              <div class="ticket__desc">
+                При регистрации более одной команды, регистрационный взнос за
+                команду (кроме первой) составит 12 500 руб.
+              </div>
+            </div>
+            <!-- <a href="#" class="ticket__button">КУПИТЬ</a> -->
+          </div>
+        </section>
+        <section class="partners" id="partners">
+          <div class="parter-block">
+            <p class="partners__title">ОРГАНИЗАТОРЫ</p>
+            <div class="partners__container">
+              <ul class="partners__list">
+                <li class="partners__item partners__item">
+                  <a
+                    href="http://www.it-events.com/"
+                    class="partners__link partners__link-org"
+                    title="It-event"
+                    target="_blank"
+                  >
+                    <img
+                      class="partners__img"
+                      src="https://ostconf.com/system/companies/logos/000/000/427/original/it-events-logo-white-horizontal_(1).png"
+                      alt="It-events logo"
+                    />
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a
+                    href="http://www.it-dominanta.ru/"
+                    class="partners__link partners__link-org"
+                    title="it-dominanta"
+                    target="_blank"
+                  >
+                    <img
+                      class="partners__img"
+                      src="https://ostconf.com/system/partners/logos/000/006/494/original/dom-03.png"
+                      alt="it-dominanta logo"
+                    />
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-          <!-- <a href="#" class="ticket__button">КУПИТЬ</a> -->
-        </div>
-      </section>
-      <section class="partners" id="partners">
-        <div class="parter-block">
-          <p class="partners__title">ОРГАНИЗАТОРЫ</p>
-          <div class="partners__container">
+          <div class="parter-block">
+            <p class="partners__title">Нам доверяют</p>
+            <div class="partners__container">
               <ul class="partners__list">
-                  <li class="partners__item partners__item">
-                      <a href="http://www.it-events.com/" class="partners__link  partners__link-org" title="It-event" target="_blank">
-                          <img class="partners__img" src="https://ostconf.com/system/companies/logos/000/000/427/original/it-events-logo-white-horizontal_(1).png" alt="It-events logo">
-                      </a>
-                  </li>
-                  <li class="partners__item">
-                      <a href="http://www.it-dominanta.ru/" class="partners__link  partners__link-org" title="it-dominanta" target="_blank">
-                          <img class="partners__img" src="https://ostconf.com/system/partners/logos/000/006/494/original/dom-03.png" alt="it-dominanta logo">
-                      </a>
-                  </li>
+                <li class="partners__item">
+                  <a
+                    href="https://www.dins.ru/"
+                    class="partners__link"
+                    title="DINS"
+                    target="_blank"
+                  >
+                    <img
+                      class="partners__img"
+                      src="./img/logo_Dins.png"
+                      alt="Dind logo"
+                    />
+                  </a>
+                </li>
+
+                <li class="partners__item">
+                  <a
+                    href="https://www.epam-group.ru/"
+                    class="partners__link"
+                    title="Epam"
+                    target=" _blank"
+                  >
+                    <img
+                      class="partners__img"
+                      src="./img/logo_Epam.png"
+                      alt="Epam logo"
+                    />
+                  </a>
+                </li>
+
+                <li class="partners__item">
+                  <a
+                    href="https://www.delltechnologies.com/ru-ru/microsites/st-petersburg.htm"
+                    class="partners__link"
+                    title="Dell technologies"
+                    target=" _blank"
+                  >
+                    <img
+                      class="partners__img"
+                      src="./img/logo_Dell.png"
+                      alt="Dell logo"
+                    />
+                  </a>
+                </li>
+
+                <li class="partners__item">
+                  <a
+                    href="https://www.dataart.ru/"
+                    class="partners__link"
+                    target="_blank"
+                    title="DataArt"
+                  >
+                    <img
+                      class="partners__img"
+                      src="./img/logo_Dataart.png"
+                      alt="DataArt logo"
+                    />
+                  </a>
+                </li>
+
+                <li class="partners__item">
+                  <a
+                    href="https://www.zodiacsystems.com/"
+                    class="partners__link"
+                    title="Zodiac Interactive"
+                    target=" _blank"
+                  >
+                    <img
+                      class="partners__img"
+                      src="./img/logo_Zodiac.png"
+                      alt="Zodiac Interactive logo"
+                    />
+                  </a>
+                </li>
+
+                <li class="partners__item">
+                  <a
+                    href="https://ru.semrush.com/"
+                    class="partners__link"
+                    title="Semrush"
+                    target=" _blank"
+                  >
+                    <img
+                      class="partners__img"
+                      src="./img/logo_Semrush.png"
+                      alt="Semrush logo"
+                    />
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a
+                    href="https://okko.tv/"
+                    class="partners__link"
+                    title="Okko"
+                    target=" _blank"
+                  >
+                    <img
+                      class="partners__img"
+                      src="./img/logo_Okko.png"
+                      alt="Okko logo"
+                    />
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a
+                    href="https://www.t-systems.com/ru/ru"
+                    class="partners__link"
+                    title="T-Systems"
+                    target=" _blank"
+                  >
+                    <img
+                      class="partners__img"
+                      src="./img/logo_t-sys.png"
+                      alt="T-Systems logo"
+                    />
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a
+                    href="https://www.jetbrains.com/ru-ru/"
+                    class="partners__link"
+                    title="JetBrains"
+                    target=" _blank"
+                  >
+                    <img
+                      class="partners__img"
+                      src="./img/logo_Jetbrains.png"
+                      alt="JetBrains logo"
+                    />
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a
+                    href="https://selectel.ru/"
+                    class="partners__link"
+                    title="Selectel"
+                    target=" _blank"
+                  >
+                    <img
+                      class="partners__img"
+                      src="./img/logo_Selectel.png"
+                      alt="Selectel logo"
+                    />
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a
+                    href="https://www.veeam.com/ru"
+                    class="partners__link"
+                    title="Veeam"
+                    target=" _blank"
+                  >
+                    <img
+                      class="partners__img"
+                      src="./img/logo_veeam.png"
+                      alt="Veeam logo"
+                    />
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a
+                    href="https://playkot.com/"
+                    class="partners__link"
+                    title="Playkot"
+                    target=" _blank"
+                  >
+                    <img
+                      class="partners__img"
+                      src="./img/logo_playkot.png"
+                      alt="Playkot logo"
+                    />
+                  </a>
+                </li>
               </ul>
+            </div>
           </div>
-      </div>
-        <div class="parter-block">
-          <p class="partners__title">Нам доверяют</p>
-          <div class="partners__container">
-            <ul class="partners__list">
-              <li class="partners__item">
-                <a href="https://www.dins.ru/" class="partners__link " title="DINS" target="_blank">
-                  <img class="partners__img" src="./img/logo_Dins.png" alt="Dind logo" />
-                </a>
-              </li>
+          <div class="parter-block">
+            <p class="partners__title partners__title--info">наши партнеры:</p>
+            <div class="partners__container">
+              <ul class="partners__list partners__list--center-partner">
+                <li class="partners__item">
+                  <a
+                    href="http://www.itcoffee.biz/"
+                    class="partners__link partners__link-info"
+                    title="It-coffee"
+                    target="_blank"
+                  >
+                    <img
+                      class="partners__img"
+                      src="./img/logo_it-coffee.png"
+                      alt="it-coffee logo"
+                    />
+                  </a>
+                </li>
 
-              <li class="partners__item">
-                <a href="https://www.epam-group.ru/" class="partners__link " title="Epam" target=" _blank">
-                  <img class="partners__img" src="./img/logo_Epam.png" alt="Epam logo" />
-                </a>
+                <li class="partners__item">
+                  <a
+                    href="http://www.vodovoz-spb.ru/"
+                    class="partners__link partners__link-info"
+                    title="Веселый водовоз"
+                    target=" _blank"
+                  >
+                    <img
+                      class="partners__img"
+                      src="./img/logo_vodovoz.png"
+                      alt="Vodowoz logo"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="contacts-section section" id="contacts">
+          <div class="contacts">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <p class="contact__title">контакты</p>
               </li>
-
-              <li class="partners__item">
-                <a href="https://www.delltechnologies.com/ru-ru/microsites/st-petersburg.htm" class="partners__link "
-                  title="Dell technologies" target=" _blank">
-                  <img class="partners__img" src="./img/logo_Dell.png" alt="Dell logo" />
-                </a>
+              <li class="contacts__item">
+                <p class="contact__desc">Руководитель проекта</p>
+                <p class="contact__name">Каланов Денис</p>
+                <a href="tel:+79216457808" class="contact__tel">
+                  +7 921 645-78-08</a
+                >
+                <a href="mailto:irina@it-events.com" class="contact__email">
+                  denis@it-events.com</a
+                >
               </li>
-
-              <li class="partners__item">
-                <a href="https://www.dataart.ru/" class="partners__link " target="_blank" title="DataArt">
-                  <img class="partners__img" src="./img/logo_Dataart.png" alt="DataArt logo" />
-                </a>
+              <li class="contacts__item">
+                <p class="contact__desc">По вопросам участия</p>
+                <p class="contact__name">Мария Михеенко</p>
+                <a href="tel:+79117063073" class="contact__tel"
+                  >+7 911 706-30-73</a
+                >
+                <a href="mailto:maria@it-events.com" class="contact__email"
+                  >maria@it-events.com</a
+                >
               </li>
-
-              <li class="partners__item">
-                <a href="https://www.zodiacsystems.com/" class="partners__link " title="Zodiac Interactive"
-                  target=" _blank">
-                  <img class="partners__img" src="./img/logo_Zodiac.png" alt="Zodiac Interactive logo" />
-                </a>
-              </li>
-
-              <li class="partners__item">
-                <a href="https://ru.semrush.com/" class="partners__link " title="Semrush" target=" _blank">
-                  <img class="partners__img" src="./img/logo_Semrush.png" alt="Semrush logo" />
-                </a>
-              </li>
-              <li class="partners__item">
-                <a href="https://okko.tv/" class="partners__link " title="Okko" target=" _blank">
-                  <img class="partners__img" src="./img/logo_Okko.png" alt="Okko logo" />
-                </a>
-              </li>
-              <li class="partners__item">
-                <a href="https://www.t-systems.com/ru/ru" class="partners__link " title="T-Systems" target=" _blank">
-                  <img class="partners__img" src="./img/logo_t-sys.png" alt="T-Systems logo" />
-                </a>
-              </li>
-              <li class="partners__item">
-                <a href="https://www.jetbrains.com/ru-ru/" class="partners__link " title="JetBrains" target=" _blank">
-                  <img class="partners__img" src="./img/logo_Jetbrains.png" alt="JetBrains logo" />
-                </a>
-              </li>
-              <li class="partners__item">
-                <a href="https://selectel.ru/" class="partners__link " title="Selectel" target=" _blank">
-                  <img class="partners__img" src="./img/logo_Selectel.png" alt="Selectel logo" />
-                </a>
-              </li>
-              <li class="partners__item">
-                <a href="https://www.veeam.com/ru" class="partners__link " title="Veeam" target=" _blank">
-                  <img class="partners__img" src="./img/logo_veeam.png" alt="Veeam logo" />
-                </a>
-              </li>
-              <li class="partners__item">
-                <a href="https://playkot.com/" class="partners__link " title="Playkot" target=" _blank">
-                  <img class="partners__img" src="./img/logo_playkot.png" alt="Playkot logo" />
-                </a>
+              <li class="contacts__item">
+                <div class="socials">
+                  <ul class="socials__list">
+                    <li class="socials__item social__item-tw">
+                      <a
+                        class="socials__link"
+                        href="https://twitter.com/hrapiconf"
+                        target=" _blank"
+                      ></a>
+                    </li>
+                    <li class="socials__item social__item-vk">
+                      <a
+                        class="socials__link"
+                        href="https://vk.com/hrapiconf"
+                        target=" _blank"
+                      ></a>
+                    </li>
+                    <li class="socials__item social__item-fb">
+                      <a
+                        class="socials__link"
+                        href="https://www.facebook.com/HRAPIConf/"
+                        target=" _blank"
+                      ></a>
+                    </li>
+                    <li class="socials__item social__item-yb">
+                      <a
+                        class="socials__link"
+                        href="https://www.youtube.com/hrapiconf"
+                        target=" _blank"
+                      ></a>
+                    </li>
+                    <li class="socials__item social__item-tg">
+                      <a
+                        class="socials__link"
+                        href="https://t.me/hrapiconf"
+                        target=" _blank"
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
               </li>
             </ul>
           </div>
-        </div>
-        <div class="parter-block">
-          <p class="partners__title partners__title--info">наши партнеры:</p>
-          <div class="partners__container">
-            <ul class="partners__list partners__list--center-partner">
-              <li class="partners__item">
-                <a href="http://www.itcoffee.biz/" class="partners__link partners__link-info" title="It-coffee"
-                  target="_blank">
-                  <img class="partners__img" src="./img/logo_it-coffee.png" alt="it-coffee logo" />
-                </a>
-              </li>
-
-              <li class="partners__item">
-                <a href="http://www.vodovoz-spb.ru/" class="partners__link partners__link-info" title="Веселый водовоз"
-                  target=" _blank">
-                  <img class="partners__img" src="./img/logo_vodovoz.png" alt="Vodowoz logo" />
-                </a>
-              </li>
-          </div>
-        </div>
-      </section>
-      <section class="contacts-section  section" id="contacts">
-        <div class="contacts">
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <p class="contact__title">контакты</p>
-            </li>
-            <li class="contacts__item">
-              <p class="contact__desc">Руководитель проекта</p>
-              <p class="contact__name">
-                Каланов Денис</p>
-              <a href="tel:+79216457808" class="contact__tel">
-                +7 921 645-78-08</a>
-              <a href="mailto:irina@it-events.com" class="contact__email">
-                denis@it-events.com</a>
-            </li>
-            <li class="contacts__item">
-              <p class="contact__desc">По вопросам участия</p>
-              <p class="contact__name">Мария Михеенко</p>
-              <a href="tel:+79117063073" class="contact__tel">+7 911 706-30-73</a>
-              <a href="mailto:maria@it-events.com" class="contact__email">maria@it-events.com</a>
-            </li>
-            <li class="contacts__item">
-              <div class="socials">
-                <ul class="socials__list">
-                  <li class="socials__item social__item-tw">
-                    <a class="socials__link" href="https://twitter.com/hrapiconf" target=" _blank"></a>
-                  </li>
-                  <li class="socials__item social__item-vk">
-                    <a class="socials__link" href="https://vk.com/hrapiconf" target=" _blank"></a>
-                  </li>
-                  <li class="socials__item social__item-fb">
-                    <a class="socials__link" href="https://www.facebook.com/HRAPIConf/" target=" _blank"></a>
-                  </li>
-                  <li class="socials__item social__item-yb">
-                    <a class="socials__link" href="https://www.youtube.com/hrapiconf" target=" _blank"></a>
-                  </li>
-                  <li class="socials__item social__item-tg">
-                    <a class="socials__link" href="https://t.me/hrapiconf" target=" _blank"></a>
-                  </li>
-                </ul>
-              </div>
-
-            </li>
-          </ul>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
