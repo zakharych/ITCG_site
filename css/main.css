@@ -413,10 +413,24 @@ template {
 .menu__item {
   flex-grow: 1;
   text-align: center;
+  position: relative;
 }
 
 .menu__item:hover {
   background-color: #2398d6;
+}
+
+.menu__item::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 90%;
+  background-color: #070b11;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+  z-index: 10;
 }
 
 .menu__link {
