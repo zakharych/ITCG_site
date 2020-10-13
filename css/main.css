@@ -44,7 +44,9 @@ body {
 
 .container {
   min-width: 1280px;
+  max-width: 1920px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 h1 {
@@ -554,15 +556,16 @@ template {
   }
 }
 
-.slider {
+.sliderrrr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 46px;
-  height: 258px;
+  min-height: 258px;
+  position: s;
 }
 
 .slider__icon {
+  margin-left: 48px;
   display: block;
   width: 66px;
   height: 66px;
@@ -584,7 +587,8 @@ template {
   border: 3px solid #ffffff;
   background: #1b212b;
   transition: all .3s ease;
-  margin: 10px;
+  margin: 22px;
+  margin-right: 46px;
 }
 
 .slider__content:before,
@@ -627,6 +631,28 @@ template {
   z-index: 2;
   position: relative;
   text-align: center;
+}
+
+.bx-wrapper .bx-pager {
+  position: absolute;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  right: 16px;
+  top: 0;
+  z-index: 20;
+  transform: translate(0, 26%);
+}
+
+.bx-wrapper {
+  box-shadow: none;
+  border: none;
+  background: transparent;
+  margin-bottom: 0;
+}
+
+.bx-pager-item {
+  margin-bottom: 17px;
 }
 
 .format {
